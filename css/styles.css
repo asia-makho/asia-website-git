@@ -384,6 +384,9 @@ ol li {
     transform: translate(-50%, -50%);
 }
 
+
+
+
 /* --- ЦИФРИ ДЛЯ ГОДИННИКА --- */
 .num {
     position: absolute;
@@ -589,6 +592,8 @@ ol li {
     margin-bottom: 10px;
     font-size: 14px;
 }
+
+
 
 footer {
     margin-top: 50px;
