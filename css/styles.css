@@ -384,9 +384,6 @@ ol li {
     transform: translate(-50%, -50%);
 }
 
-
-
-
 /* --- ЦИФРИ ДЛЯ ГОДИННИКА --- */
 .num {
     position: absolute;
@@ -593,8 +590,6 @@ ol li {
     font-size: 14px;
 }
 
-
-
 footer {
     margin-top: 50px;
     padding-top: 20px;
@@ -621,4 +616,4 @@ footer {
     color: #ccc;
 }
 
-/* Rebase test branch */
+/* Тестуємо rebase */
