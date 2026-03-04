@@ -1,0 +1,619 @@
+/* --- Основні налаштування --- */
+body {
+    font-family: "Lora", serif;
+    /* background: linear-gradient(180deg, #e0f7fa 0%, #ffffff 100%); */
+    color: #333333;
+    margin: 0;
+    padding: 20px 0;
+    min-height: 100vh;
+    background: linear-gradient(to right, #dbeafe, #e0f2fe);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Шапка --- */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.my-contacts {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Me-logo {
+    width: 160px;
+    height: 160px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+h1.my-name {
+    font-size: 2.4em;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+/* --- Навігація --- */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menu-buttons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* --- Скляна навігація (Liquid Glass) --- */
+.menu-buttons a {
+    text-decoration: none;
+    color: #2c3e50;
+    background-color: #f1f5f9;
+    /* Ніжний світлий фон, щоб виділятися на білому */
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 1px solid #e2e8f0;
+    /* Ледь помітна акуратна рамочка */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 2px 5px #007bff;
+}
+
+/* Ефект при наведенні мишки та для активної сторінки */
+.menu-buttons a:hover,
+.menu-buttons a[aria-current="page"] {
+    background-color: #ffffff;
+    /* Темний колір для контрасту */
+    color: #007bff;
+    transform: translateY(-3px);
+    /* Легке підстрибування */
+    box-shadow: 0 6px 15px rgba(44, 62, 80, 0.2);
+    border-color: #2c3e50;
+}
+
+/* --- Контент та Заголовки (CV Style) --- */
+section {
+    margin-bottom: 40px;
+}
+
+/* Єдиний стиль для всіх головних заголовків (Про мене, Навички, Освіта, Волонтерство) */
+h2 {
+    color: #007bff;
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Підзаголовки (назва універу) */
+h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Роки та деталі */
+h4 {
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Текст по ширині */
+p {
+    line-height: 1.8;
+    font-size: 1.05em;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* --- Списки (Навички та Курси) --- */
+/* Навички кнопками */
+section:nth-of-type(2) ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section:nth-of-type(2) ul li {
+    background-color: #e1f5fe;
+    color: #01579b;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Звичайний список */
+ol li {
+    margin-bottom: 10px;
+    padding-left: 35px;
+    line-height: 1.6;
+}
+
+/* --- Картинки --- */
+.about-me-content {
+    max-width: 100%;
+    margin: 30px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 16px;
+}
+
+
+.about-me-text {
+    flex: 1;
+    max-width: 600px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.about-me-text p {
+    margin: 0 0 12px 0;
+    /* відступи між абзацами */
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 720px) {
+    .about-me-content {
+        flex-direction: column;
+        gap: 16px;
+        padding: 12px;
+    }
+}
+
+/* Робить картинку і блок тексту сусідами в одному рядку */
+.volunteer-content {
+    display: flex;
+    align-items: flex-start;
+    /* Вирівнює по верху (можна center) */
+    gap: 30px;
+    /* Відступ між картинкою і текстом */
+}
+
+/* Стиль для фото Ворохти (аналогічно до серця) */
+.Vorokhta-logo {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    /* Щоб фото не розтягувалось */
+    border-radius: 10px;
+    /* Заокруглені кути */
+}
+
+.mattplotlib_heart-logo {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.volunteer-text {
+    flex: 1;
+}
+
+
+/* ---Контакти --- */
+.contact-list {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Налаштування одного рядка контакту */
+.contact-item {
+    display: flex;
+    /* Вирівнює все в один рядок! */
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Налаштування іконки */
+/* --- Анімація іконок контактів --- */
+.contact-icon {
+    width: 30px;
+    font-size: 22px;
+    color: #2c3e50;
+    margin-right: 10px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
+    /* Важливо для трансформацій */
+}
+
+/* Коли наводимо мишку на весь рядок контакту, іконка реагує */
+.contact-item:hover .contact-icon {
+    transform: scale(1.3) translateY(-3px) rotate(8deg);
+    /* Збільшується, піднімається і трохи нахиляється */
+    color: #007bff;
+    /* Іконка стає фірмового синього кольору */
+}
+
+/* Легка анімація для самого тексту посилання */
+.contact-item a {
+    text-decoration: none;
+    color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #0056b3;
+    transform: translateX(5px);
+    /* Текст злегка від'їжджає вправо */
+}
+
+/* Налаштування слова (наприклад, Email:) */
+.contact-item strong {
+    margin-right: 8px;
+    color: #333;
+}
+
+/* --- Футер --- */
+.music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.music-caption {
+    font-weight: bold;
+    color: #333;
+}
+
+.music-player a {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    /* Закруглені кути */
+    font-weight: bold;
+    transition: background 0.3s;
+    /* Плавна анімація */
+}
+
+.music-player a:hover {
+    background-color: #555;
+    /* Світліший фон при наведенні */
+    transform: scale(1.05);
+}
+
+/* =========================================
+   ДАШБОРД: ПОГОДА ТА ЧАС
+   ========================================= */
+
+.dashboard-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 30px;
+    background: #f8fbff;
+    border-radius: 20px;
+    border: 1px solid #e1eaf5;
+}
+
+/* --- ГОДИННИК --- */
+.clock-container {
+    display: flex;
+    justify-content: center;
+}
+
+.clock {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #2c3e50;
+    border-radius: 50%;
+    position: relative;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin:
+        bottom;
+    background: #2c3e50;
+    border-radius: 5px;
+    transform: translateX(-50%) rotate(0deg);
+}
+
+.hour-hand {
+    width: 6px;
+    height: 45px;
+}
+
+.min-hand {
+    width: 4px;
+    height: 60px;
+    background: #7f8c8d;
+}
+
+.second-hand {
+    width: 2px;
+    height: 70px;
+    background: #e74c3c;
+}
+
+.center-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: #2c3e50;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* --- ЦИФРИ ДЛЯ ГОДИННИКА --- */
+.num {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2c3e50;
+    /* Трохи прозорості, щоб вони не зливалися зі стрілками */
+    opacity: 0.8;
+}
+
+/* Відступ цифр від краю циферблата */
+.num span {
+    display: inline-block;
+    margin-top: 6px;
+}
+
+/* Обертаємо контейнери по колу */
+.num1 {
+    transform: rotate(30deg);
+}
+
+.num2 {
+    transform: rotate(60deg);
+}
+
+.num3 {
+    transform: rotate(90deg);
+}
+
+.num4 {
+    transform: rotate(120deg);
+}
+
+.num5 {
+    transform: rotate(150deg);
+}
+
+.num6 {
+    transform: rotate(180deg);
+}
+
+.num7 {
+    transform: rotate(210deg);
+}
+
+.num8 {
+    transform: rotate(240deg);
+}
+
+.num9 {
+    transform: rotate(270deg);
+}
+
+.num10 {
+    transform: rotate(300deg);
+}
+
+.num11 {
+    transform: rotate(330deg);
+}
+
+.num12 {
+    transform: rotate(0deg);
+}
+
+/* Повертаємо самі цифри назад, щоб вони стояли вертикально */
+.num1 span {
+    transform: rotate(-30deg);
+}
+
+.num2 span {
+    transform: rotate(-60deg);
+}
+
+.num3 span {
+    transform: rotate(-90deg);
+}
+
+.num4 span {
+    transform: rotate(-120deg);
+}
+
+.num5 span {
+    transform: rotate(-150deg);
+}
+
+.num6 span {
+    transform: rotate(-180deg);
+}
+
+.num7 span {
+    transform: rotate(-210deg);
+}
+
+.num8 span {
+    transform: rotate(-240deg);
+}
+
+.num9 span {
+    transform: rotate(-270deg);
+}
+
+.num10 span {
+    transform: rotate(-300deg);
+}
+
+.num11 span {
+    transform: rotate(-330deg);
+}
+
+.num12 span {
+    transform: rotate(0deg);
+}
+
+/* --- ПОГОДА --- */
+.weather-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    margin: 0;
+}
+
+.search-box input:focus {
+    border-color: #007bff;
+}
+
+.search-box button {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    margin: 0;
+}
+
+.search-box button:hover {
+    background: #007bff;
+}
+
+.weather-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.weather-card .icon {
+    font-size: 50px;
+}
+
+/* Захист від стилів резюме (щоб текст не ставав синім і великим) */
+.weather-card .info h2#cityName {
+    margin: 0 0 5px 0 !important;
+    font-size: 24px !important;
+    color: #2c3e50 !important;
+    border: none !important;
+    padding: 0 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
+.weather-card .info p {
+    margin: 3px 0 !important;
+    font-size: 14px !important;
+    color: #555 !important;
+    padding: 0 !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+}
+
+.weather-card .info p#temperature {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    color: #007bff !important;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+    color: #007bff;
+}
+
+.footer-content a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.separator {
+    color: #ccc;
+}
+
+/* Тестуємо rebase */
