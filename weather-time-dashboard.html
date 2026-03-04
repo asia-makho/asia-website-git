@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Погода та час | Ася</title>
-    
+    <title>Погода та час | Ася махомет</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌡️</text></svg>">
+
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌡️</text></svg>">
 </head>
+
 <body>
 
     <div class="container">
-        
+
         <header>
             <img src="images/me.jpg" alt="Я" class="Me-logo">
             <h1 class="my-name">Ася</h1>
@@ -32,26 +36,26 @@
 
         <main>
             <div class="dashboard-wrapper">
-                
+
                 <div class="clock-container">
                     <div class="clock">
                         <div class="num num1"><span>1</span></div>
                         <div class="num num2"><span>2</span></div>
                         <div class="num num3"><span>3</span></div>
                         <div class="num num4"><span>4</span></div>
-                         <div class="num num5"><span>5</span></div>
-                         <div class="num num6"><span>6</span></div>
-                         <div class="num num7"><span>7</span></div>
-                         <div class="num num8"><span>8</span></div>
-                         <div class="num num9"><span>9</span></div>
-                         <div class="num num10"><span>10</span></div>
-                         <div class="num num11"><span>11</span></div>
-                         <div class="num num12"><span>12</span></div>
-                         
-                         <div class="hand hour-hand" id="hour-hand"></div>
-                         <div class="hand min-hand" id="min-hand"></div>
-                         <div class="hand second-hand" id="second-hand"></div>
-                         <div class="center-dot"></div>
+                        <div class="num num5"><span>5</span></div>
+                        <div class="num num6"><span>6</span></div>
+                        <div class="num num7"><span>7</span></div>
+                        <div class="num num8"><span>8</span></div>
+                        <div class="num num9"><span>9</span></div>
+                        <div class="num num10"><span>10</span></div>
+                        <div class="num num11"><span>11</span></div>
+                        <div class="num num12"><span>12</span></div>
+
+                        <div class="hand hour-hand" id="hour-hand"></div>
+                        <div class="hand min-hand" id="min-hand"></div>
+                        <div class="hand second-hand" id="second-hand"></div>
+                        <div class="center-dot"></div>
                     </div>
                 </div>
 
@@ -60,7 +64,7 @@
                         <input type="text" id="city" placeholder="Введіть місто..." onkeypress="handleEnter(event)">
                         <button onclick="getWeather()">Пошук</button>
                     </div>
-                    
+
                     <div id="error-message" class="error-message"></div>
                     <div id="loading" style="display: none; color: #555; margin-bottom: 10px;">Завантаження...</div>
 
@@ -91,8 +95,9 @@
             <span class="separator">|</span>
             <a href="https://github.com/asia-makho" target="_blank">Github</a>
             <span class="separator">|</span>
-                    <a href="my-contacts.html">Усі контакти</a>
+            <a href="my-contacts.html">Усі контакти</a>
         </div>
     </footer>
 </body>
+
 </html>
