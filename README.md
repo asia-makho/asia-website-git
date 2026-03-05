@@ -17,12 +17,15 @@ Hi there! This is my interactive portfolio designed to showcase modern web devel
   * Event Listeners.
 * **API:** OpenWeatherMap API.
 
-## 📸 Project Structure
+### 📸 Project Structure
+
 The project consists of three main sections:
-Home: Information regarding my education, background, and technical skills.
-Contacts: Quick and easy links to get in touch with me.
-Weather & Time: A functional dashboard featuring the live widgets.
+1.  **Home:** Information regarding my education, background, and technical skills.
+2.  **Contacts:** Quick and easy links to get in touch with me.
+3.  **Weather & Time:** A functional dashboard featuring the live widgets.
 
 ---
+
 Developed with ❤️ by **Asia Makhomet**
-## Student at  **FBME, Igor Sikorsky Kyiv Polytechnic Institute (2026).**
+
+Student at **FBME, Igor Sikorsky Kyiv Polytechnic Institute (2026).**
