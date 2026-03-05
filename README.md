@@ -25,4 +25,4 @@ Weather & Time: A functional dashboard featuring the live widgets.
 
 ---
 Developed with ❤️ by **Asia Makhomet**
-# Student at FBME, Igor Sikorsky Kyiv Polytechnic Institute (2026).
+Student at * **FBME, Igor Sikorsky Kyiv Polytechnic Institute (2026).**
